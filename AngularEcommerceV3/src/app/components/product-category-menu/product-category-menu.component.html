@@ -1,0 +1,19 @@
+<div class="col-lg-3">
+  <div class="all-category">
+    <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
+    <ul class="main-category">
+      <li><a href="#">New Arrivals <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <ul class="sub-category">
+          <li *ngFor="let tempProductCategory of productCategories">
+
+            <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
+                {{ tempProductCategory.categoryName }}
+            </a>
+
+          </li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div>
+</div>

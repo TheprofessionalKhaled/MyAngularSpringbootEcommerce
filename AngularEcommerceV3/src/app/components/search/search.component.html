@@ -1,0 +1,11 @@
+<div class="search-top">
+  <div class="top-search"><a href="#0"><i class="ti-search"></i></a></div>
+  <!-- Search Form -->
+  <div class="search-top">
+    <form class="search-form">
+      <input (keyup.enter)="doSearch(myInput.value)" type="text" placeholder="Search here..." name="search">
+      <button (click)="doSearch(myInput.value)" type="submit"><i class="ti-search"></i></button>
+    </form>
+  </div>
+  <!--/ End Search Form -->
+</div>
